@@ -1,6 +1,7 @@
 <view class="container">
 
     <view class="selector">
+        <image class="order-img" src="../../statics/figs/order.png"/>
         <view class="all"> 全部 </view>
         <view class="unfinished">待取</view>
         <view class="finished">已完成</view>
