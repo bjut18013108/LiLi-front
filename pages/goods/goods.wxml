@@ -1,0 +1,21 @@
+<!--pages/goods.wxml-->
+<view class="container">
+    <scroll-view class="pictureArea" scroll-x="true">
+        <view class="list" wx:for="{{goodsPicList}}" wx:key="item" class="l">
+            <image class="item" src="../../statics/goods/{{goodsID}}/{{item.picName}}.png"></image>
+        </view>
+    </scroll-view>
+    <view class="goods">
+        <text class="nameAndPrice" decode="{{true}}"> {{goodsName}} &emsp; ￥{{goodsPrise}} </text>
+        <text class="goodsInfo" decode="{{true}}">取餐时间：{{servingTime}} &emsp; 取餐地点：{{servingArea}}</text>
+    </view>
+    <view class="goodsDetail">
+        详情内容：
+        <text class="t"> {{detail}} </text>
+    </view>
+    <view class="purchaseNotes">
+        购买须知：
+        <text class="t"> {{note}} </text>
+    </view>
+    <view class="reserveButton">预定</view>
+</view>

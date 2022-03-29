@@ -1,0 +1,30 @@
+<view class="container-1">
+    <view class="search-area"> 
+        <mp-searchbar focus="{{inputShowed}}" bindinput="inputTyping" placeholder="搜索商品名称" focus="{{true}}" cancel="{{false}}"></mp-searchbar>
+        <image class="search-btn" bindtap="searchBtnAction" src="../../statics/figs/lens.png">
+        </image>
+    </view>
+
+    <view class="ribbon"/>
+
+    <image class="mainpage-background" src="../../statics/figs/homepage-background.png"/>
+
+</view>
+
+<view class="container-2">
+
+    <view class="shops-area">
+        <view wx:for="{{shopList}}" wx:key="item" class="shop-item" bindtap="selectShop" data-name="{{item.name}}">
+
+            <image class="shop-pic" src="../../statics/shops/{{item.picName}}.png"/>
+            <view class="shop-info">
+                <view class="shop-name"> {{item.name}} </view>
+                <view class="shop-hours"> 
+                    <image class="shop-hours-img" src="../../statics/figs/clock.png"></image>
+                    <view class="shop-hours-text">{{item.openingHour}}</view>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

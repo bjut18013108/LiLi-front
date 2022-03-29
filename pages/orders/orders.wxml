@@ -1,0 +1,27 @@
+<view class="container">
+
+    <view class="selector">
+        <view class="all"> 全部 </view>
+        <view class="unfinished">待取</view>
+        <view class="finished">已完成</view>
+    </view>
+
+    <view class="orders">
+        <scroll-view scroll-y="true" class="orderList">
+            <view wx:for="{{orderList}}" wx:key="item" class="order">
+                <view class="addrAndState">
+                    <view class="addr"> {{item.addr}} </view>
+                    <view class="state"> {{item.state}} </view>
+                </view>
+                <view class="picAndInfo">
+                    <image class="pic" src="{{item.picName}}"></image>
+                    <view class="info">
+                        <view class="price"> ￥{{item.price}} </view>
+                        <view class="cdkey"> 取餐码：{{item.cdkey}} </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+
+</view>
