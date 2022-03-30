@@ -59,43 +59,67 @@ page {
     margin: 10pt;
 }
 
-.addrAndState {
+.addr-and-state {
     width: 100%;
     flex: 1;
     display: flex;
     flex-direction: row;
 }
 
-.addrAndState .state {
-    color: #cecece;
-    margin-left: auto;
+.addr-and-state .addr {
+    font-weight: 700;
 }
 
-.picAndInfo {
+.addr-and-state .warning {
+    color: rgb(234, 88, 82);
+    margin-left: auto;
+    padding: 2pt;
+    font-size: small;
+    font-weight: 700;
+}
+
+.addr-and-state .state {
+    color: black;
+    margin-left: auto;
+    background-color: rgb(178, 215, 217);
+    border-radius: 5px;
+    padding: 2pt;
+    font-weight: 700;
+}
+
+.pic-and-info {
     width: 100%;
     flex: 3;
     display: flex;
     flex-direction: row;
 }
 
-.picAndInfo .pic {
-    width: 150px;
-    height: 100%
+.pic-and-info .pic {
+    width: 140px;
+    height: 100%;
 }
 
-.picAndInfo .info {
+.pic-and-info .info {
     height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.picAndInfo .info .price {
+.pic-and-info .info .price {
     width: 100%;
     margin-top: auto;
     text-align: end;
 }
-.picAndInfo .info .cdkey {
+
+.pic-and-info .info .time { 
     width: 100%;
     text-align: end;
+    margin-top: 10pt;
+}
+.pic-and-info .info .cdkey {
+    width: 100%;
+    color: rgb(79, 155, 141);
+    text-align: end;
+    font-weight: 700;
 }
