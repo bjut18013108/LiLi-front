@@ -2,14 +2,14 @@
 
     <view class="selector">
         <image class="order-img" src="../../statics/figs/order.png"/>
-        <view class="all" bindtap=""> 全部 </view>
-        <view class="unfinished">进行中</view>
-        <view class="finished">已结束</view>
+        <view class="all" bindtap="selectAll"> 全部 </view>
+        <view class="unfinished" bindtap="selectInProgress">进行中</view>
+        <view class="finished" bindtap="selectFinished">已结束</view>
     </view>
 
     <view class="orders">
-        <scroll-view scroll-y="true" class="orderList">
-            <view wx:for="{{orderList}}" wx:key="item" class="order">
+        <scroll-view scroll-y="true" class="order-list">
+            <view wx:for="{{showList}}" wx:key="item" class="order">
                 <view class="addr-and-state">
                     <view class="addr"> {{item.addr}} </view>
                     <view class="warning" wx:if="{{item.state=='已过期'}}"> 经常逾期不取会影响您的信用！</view>

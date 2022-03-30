@@ -28,14 +28,13 @@ page {
 
 .all, .unfinished, .finished {
     flex: 2;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 5px;
+    height: 25pt;
+    line-height: 25pt;
+    border-radius: 5pt;
     text-align:center;
-    /* border: 1px solid gray; */
     background-color: rgb(146, 199, 204);
     color: white;
-    margin: 10px 15px 10px 15px;
+    margin: 10pt 10pt 10pt 10pt;
 }
 
 .orders {
@@ -45,7 +44,7 @@ page {
     background-color: white;
 }
 
-.orderList {
+.order-list {
     height: 100%;
 }
 
