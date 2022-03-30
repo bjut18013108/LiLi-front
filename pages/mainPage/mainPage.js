@@ -83,7 +83,7 @@ Page({
         let shopName = e.currentTarget.dataset.name;
         console.log("selected shop: "+shopName);
         wx.navigateTo({
-            url: '/pages/logs/logs'
+            url: '/pages/shop/shop'
         })
     }
 })

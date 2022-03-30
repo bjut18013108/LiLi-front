@@ -1,0 +1,28 @@
+<!--pages/shop/shop.wxml-->
+
+<view class="container-1">
+
+    <view class="intro">
+        <image class="shop-img" src="../../statics/shops/shop0.png"/>
+        <view class="shop-name"> {{shopName}} </view>
+        <view class="shop-hours">
+            <view class="shop-hours-text">
+                营业时间：{{openingHour}}
+            </view>
+        </view>
+    </view>
+
+    <view class="goods-area">
+        <view wx:for="{{goodsList}}" wx:key="item" class="good-item" bindtap="selectGood" data-name="{{item.name}}">
+
+            <image class="good-img"/> <!--  src="../../statics/shops/{{item.picName}}.png" -->
+            <view class="good-info">
+                <view class="good-name"> {{item.name}} </view>
+                <view class="good-price"> 价格（￥）：{{item.price}} </view>
+                <view class="good-sales"> 月销量：{{item.sales}} </view>
+            </view>
+
+        </view>
+    </view>
+
+</view>

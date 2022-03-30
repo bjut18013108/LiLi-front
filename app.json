@@ -1,7 +1,8 @@
 {
     "pages": [
-        "pages/orders/orders",
         "pages/mainPage/mainPage",
+        "pages/shop/shop",
+        "pages/orders/orders",
         "pages/userCenter/userCenter",
         "pages/goods/goods",
         "pages/logs/logs"
@@ -24,13 +25,13 @@
                 "pagePath": "pages/mainPage/mainPage",
                 "text": "首页",
                 "iconPath": "./statics/figs/cart.png",
-                "selectedIconPath":"./statics/figs/cart-select.png"
+                "selectedIconPath": "./statics/figs/cart-select.png"
             },
             {
                 "pagePath": "pages/userCenter/userCenter",
                 "text": "我的",
                 "iconPath": "./statics/figs/me.png",
-                "selectedIconPath":"./statics/figs/me-select.png"
+                "selectedIconPath": "./statics/figs/me-select.png"
             }
         ]
     }
