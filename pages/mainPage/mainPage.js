@@ -5,34 +5,19 @@ Page({
         // 搜索框值
         inputVal: "",
 
-        // 推荐商品列表
-        recomItemList: [{
-                "name": "推荐商品1",
-                "picName": "item0"
-            },
-            {
-                "name": "推荐商品2",
-                "picName": "item1"
-            },
-            {
-                "name": "推荐商品3",
-                "picName": "item2"
-            },
-        ],
-
         // 商家列表
         shopList: [{
-                "name": "商家1",
+                "name": "东区食堂",
                 "picName": "shop0",
                 "openingHour": "00:00 - 24:00"
             },
             {
-                "name": "商家2",
+                "name": "知行水果店",
                 "picName": "shop1",
                 "openingHour": "00:00 - 24:00"
             },
             {
-                "name": "商家3",
+                "name": "图书馆烘焙坊",
                 "picName": "shop2",
                 "openingHour": "00:00 - 24:00"
             },

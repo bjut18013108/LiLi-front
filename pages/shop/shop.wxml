@@ -7,18 +7,26 @@
         <view class="shop-name"> {{shopName}} </view>
         <view class="shop-hours">
             <view class="shop-hours-text">
-                营业时间：{{openingHour}}
+                营业时间：{{openingHour}} 
+                <text class="status"> 营业中 </text>
             </view>
         </view>
     </view>
 
-    <view class="goods-area">
-        <view wx:for="{{goodsList}}" wx:key="item" class="good-item" bindtap="selectGood" data-name="{{item.name}}">
+    <view class="addr"> 取餐地址：{{addr}} </view>
 
-            <image class="good-img"/> <!--  src="../../statics/shops/{{item.picName}}.png" -->
+    <view class="goods-area">
+        <view wx:for="{{goodsList}}" wx:key="item" class="good-item" bindtap="selectGood" data-id="{{item.id}}">
+
+            <image class="good-img" src="{{item.picName}}"/> 
             <view class="good-info">
                 <view class="good-name"> {{item.name}} </view>
-                <view class="good-price"> 价格（￥）：{{item.price}} </view>
+                <view class="good-price"> 
+                    ￥ {{item.price}} 
+                    <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text> 
+                    <text class="remain" wx:if="{{item.remain > 0}}">当前剩余：{{item.remain}}</text>
+                    <text class="no-remain" wx:if="{{item.remain === 0}}">已售罄</text>
+                </view>
                 <view class="good-sales"> 月销量：{{item.sales}} </view>
             </view>
 

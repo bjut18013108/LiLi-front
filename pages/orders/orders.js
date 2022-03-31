@@ -5,7 +5,7 @@ Page({
     data: {
         orderList: [
             {
-                picName: "../../statics/goods/goods1/1.png",
+                picName: "../../statics/goods/goods1.png",
                 addr: "西区食堂",
                 state: "备餐中",
                 color: "rgb(245, 218, 120)",
@@ -15,7 +15,7 @@ Page({
             },
 
             {
-                picName: "../../statics/goods/goods1/1.png",
+                picName: "../../statics/goods/goods1.png",
                 addr: "第一留学餐厅",
                 state: "待取餐",
                 color: "rgb(178, 215, 217)",
@@ -25,7 +25,7 @@ Page({
             },
 
             {
-                picName: "../../statics/goods/goods1/1.png",
+                picName: "../../statics/goods/goods1.png",
                 addr: "西区食堂",
                 state: "已完成",
                 color: "rgb(124, 223, 161)",
@@ -35,7 +35,7 @@ Page({
             },
 
             {
-                picName: "../../statics/goods/goods1/1.png",
+                picName: "../../statics/goods/goods1.png",
                 addr: "西区食堂",
                 state: "已过期",
                 color: "rgb(233, 88, 84)",

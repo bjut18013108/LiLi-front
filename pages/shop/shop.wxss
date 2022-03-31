@@ -3,7 +3,7 @@
 .container-1 {
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: white;
 }
 
 .intro {
@@ -44,7 +44,71 @@
     line-height: 20pt;
     font-size: small;
     font-weight: 500;
-    background-color: rgb(124, 223, 161);
     border-radius: 5pt;
-    margin: 0 25% 0 25%;
+    margin: 0 20% 0 20%;
+}
+
+.status {
+    background-color: rgb(218, 246, 139);
+    padding: 2pt;
+    border-radius: 3pt;
+}
+
+.addr {
+    width: 90%;
+    margin: 2% 5% 0 5% ;
+    font-weight: 500;
+    font-size: small;
+}
+
+.goods-area {
+    background-color: white;
+    width: 100%;
+}
+
+.good-item {
+    background-color: rgb(236, 236, 236);
+    width: 90%;
+    margin: 5% 5% 0 5% ;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10pt;
+}
+
+.good-img {
+    flex: 1;
+    height: 60pt;
+    margin: 10pt;
+}
+
+.good-info {
+    flex: 2;
+    margin-left: 10pt;
+}
+
+.good-name {
+    margin-top: 10pt;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.good-price {
+    margin-top: 1pt;
+}
+
+.good-sales {
+    margin-bottom: 5pt;
+    font-size: small;
+}
+
+.remain {
+    background-color: rgb(124, 223, 161);
+    padding: 3pt;
+    border-radius: 3pt;
+}
+
+.no-remain {
+    background-color: rgb(233, 88, 84);
+    padding: 3pt;
+    border-radius: 3pt;
 }

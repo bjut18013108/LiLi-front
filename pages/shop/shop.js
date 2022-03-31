@@ -6,14 +6,26 @@ Page({
      */
     data: {
         shopName: "东区食堂",
+        addr:"学校南门进来第二个路口左拐到头",
         openingHour: "00:00 - 24:00",
         goodsList: [
             {
+                id: "good001",
                 name: "鸡丁黄瓜盖饭套餐",
-                picName: "pic1",
-                price: 10.00,
-                sales: 100,
-            }
+                picName: "../../statics/goods/goods1.png",
+                price: "10.00",
+                remain: 6,
+                sales: 31,
+            },
+
+            {
+                id: "good002",
+                name: "剁椒炒鸡蛋",
+                picName: "../../statics/goods/goods2.png",
+                price: "15.00",
+                remain: 0,
+                sales: 14,
+            },
         ]
     },
 
@@ -39,8 +51,9 @@ Page({
     },
 
     // 点击商品处理函数
-    selectGood : function() {
-
+    selectGood : function(e) {
+        let id = e.currentTarget.dataset.id;
+        console.log("选中商品：" + id)
     }
  
 })
