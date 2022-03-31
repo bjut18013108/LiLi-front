@@ -21,7 +21,10 @@
                 <view class="shop-name"> {{item.name}} </view>
                 <view class="shop-hours"> 
                     <image class="shop-hours-img" src="../../statics/figs/clock.png"></image>
-                    <view class="shop-hours-text">{{item.openingHour}}</view>
+                    <view class="shop-hours-text">
+                        {{item.openingHour}}
+                        <text class="status" style="background-color: {{item.color}}"> {{item.status}} </text>
+                    </view>
                 </view>
             </view>
 

@@ -51,7 +51,6 @@ mp-searchbar {
     background-color: white;
 }
 
-
 .shop-item {
     display: flex;
     flex-direction: row;
@@ -86,13 +85,20 @@ mp-searchbar {
 }
 
 .shop-hours-img {
-    width: 20pt;
+    width: 22pt;
     height: 100%;
-    padding-left: 40pt;
+    padding-left: 20pt;
 }
 
 .shop-hours-text {
     flex: 1;
     padding-left: 5pt;
     padding-top: 2pt;
+}
+
+.status {
+    margin-left: 5pt;
+    background-color: rgb(146, 199, 204);
+    padding: 3pt;
+    border-radius: 3pt;
 }

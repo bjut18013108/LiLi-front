@@ -7,19 +7,25 @@ Page({
 
         // 商家列表
         shopList: [{
-                "name": "东区食堂",
-                "picName": "shop0",
-                "openingHour": "00:00 - 24:00"
+                name: "东区食堂",
+                picName: "shop0",
+                openingHour: "00:00 - 24:00",
+                status: "营业中",
+                color: "rgb(124, 223, 161)"
             },
             {
-                "name": "知行水果店",
-                "picName": "shop1",
-                "openingHour": "00:00 - 24:00"
+                name: "知行水果店",
+                picName: "shop1",
+                openingHour: "00:00 - 24:00",
+                status: "营业中",
+                color: "rgb(124, 223, 161)"
             },
             {
-                "name": "图书馆烘焙坊",
-                "picName": "shop2",
-                "openingHour": "00:00 - 24:00"
+                name: "图书馆烘焙坊",
+                picName: "shop2",
+                openingHour: "00:00 - 24:00",
+                status: "已休息",
+                color: "rgb(233, 88, 84)"
             },
         ]
     },
