@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="container-1">
+
+<view class="intro">
+    <image class="goods-img" src="../../statics/goods/goods1.png"/>
+    <view class="goods-name"> 
+        {{goodsName}} 
+        <text class="price"> ￥ {{price}} </text>
+    </view>
+
+    <view class="time"> 取餐时间：{{time}} </view>
+    
+</view>
+
+
+<view class="goods-area">
+    
+</view>
+
+</view>
