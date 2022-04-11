@@ -16,8 +16,15 @@
 <!-- checker -->
 
 
-<view class="goods-area">
-    
+<view class="goods-area" >
+    详细说明：
+    <view wx:for="{{detailList}}" wx:key="item">
+        <view> {{item.detail}} </view>
+    </view>
 </view>
+
+<image class="avatar" src="../../statics/figs/avatar37.png">  </image>
+
+<view class="purchase-button" bindtap="purchase" data-name="{{ID}}"> 立刻预定 </view>
 
 </view>

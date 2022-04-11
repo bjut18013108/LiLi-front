@@ -14,7 +14,6 @@
     padding: 10pt 5% 0 5% ;
     width: 90%;
     height: 150pt;
-
 }
 
 .goods-name {
@@ -45,4 +44,30 @@
     font-size: large;
     text-align: center;
     line-height: 25pt;
+}
+
+.goods-area {
+    margin: 0 10% 0 10% ;
+    padding: 10pt;
+    background-color: rgb(233, 233, 233);
+}
+
+.avatar {
+    width: 40pt;
+    height: 40pt;
+    margin-top: -20pt;
+    margin-right: 15pt;
+    float: right;
+}
+
+.purchase-button {
+    background-color: rgb(244, 188, 65);
+    color: white;
+    margin:  10% 20% 0 20%;
+    padding: 7pt;
+    margin-bottom: 40pt;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20pt;
+    border-radius: 10pt;
 }
