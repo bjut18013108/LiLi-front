@@ -25,9 +25,23 @@ Page({
     purchase : function (e) {
         let goodsID = e.currentTarget.dataset.id;
         console.log("selected goods ID: "+goodsID);
-        wx.redirectTo({
-            url: '/pages/orders/orders'
+
+        wx.showModal({
+            title: '确认订单',
+            content: this.data.goodsName+' ￥'+this.data.price+
+                     '\r\n取餐时间：'+this.data.time+
+                     '\r\n请在规定时间取餐',
+            success (res) {
+              if (res.confirm) {
+                wx.redirectTo({
+                    url: '/pages/orders/orders'
+                })
+              } else if (res.cancel) {
+
+              }
+            }
         })
+
     }
 
 })
