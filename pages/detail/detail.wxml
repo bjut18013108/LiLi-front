@@ -9,7 +9,7 @@
         <text class="price"> ￥ {{price}} </text>
     </view>
 
-    <view class="time"> 取餐时间：{{time}} </view>
+    <view class="time"> {{shop}} 取餐时间：{{time}} </view>
     
 </view>
 

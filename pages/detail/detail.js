@@ -5,6 +5,7 @@ Page({
      */
     data: {
         goodsName:"鸡丁黄瓜盖饭套餐",
+        shop:"东区食堂",
         ID:"F0000001",
         price: 10.2,
         time: "19:30 - 20:00",
