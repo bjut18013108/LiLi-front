@@ -60,15 +60,6 @@ Page({
         })
     },
 
-    // 选中推荐商品事件处理函数 
-    selectItem: function (e) {
-        let itemName = e.currentTarget.dataset.name;
-        console.log("selected item: "+itemName);
-        wx.navigateTo({
-            url: '/pages/goods/goods'
-        })
-    },
-
     // 选中商家事件处理函数
     selectShop: function (e) {
         let shopName = e.currentTarget.dataset.name;

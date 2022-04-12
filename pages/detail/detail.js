@@ -23,7 +23,7 @@ Page({
     },
 
     purchase : function (e) {
-        let goodsID = e.currentTarget.dataset.name;
+        let goodsID = e.currentTarget.dataset.id;
         console.log("selected goods ID: "+goodsID);
         // wx.navigateTo({
         //     url: '/pages/shop/shop'

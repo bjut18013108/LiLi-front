@@ -25,6 +25,6 @@
 
 <image class="avatar" src="../../statics/figs/avatar37.png">  </image>
 
-<view class="purchase-button" bindtap="purchase" data-name="{{ID}}"> 立刻预定 </view>
+<view class="purchase-button" bindtap="purchase" data-id="{{ID}}"> 立刻预定 </view>
 
 </view>

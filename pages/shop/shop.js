@@ -54,6 +54,9 @@ Page({
     selectGood : function(e) {
         let id = e.currentTarget.dataset.id;
         console.log("选中商品：" + id)
+        wx.navigateTo({
+          url: '/pages/detail/detail',
+        })
     }
  
 })
