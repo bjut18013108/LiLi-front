@@ -6,7 +6,8 @@
         "pages/shop/shop",
         "pages/orders/orders",
         "pages/goods/goods",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/selectResults/selectResults"
     ],
     "window": {
         "backgroundTextStyle": "light",

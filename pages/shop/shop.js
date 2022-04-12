@@ -54,6 +54,16 @@ Page({
     selectGood : function(e) {
         let id = e.currentTarget.dataset.id;
         console.log("选中商品：" + id)
+        for (let good of this.data.goodsList) {
+            if (good.id === id && good.remain === 0) {
+                wx.showToast({
+                    title: '商品已售罄',
+                    icon: 'none',
+                    duration: 1000
+                })
+                return
+            }
+        }
         wx.navigateTo({
           url: '/pages/detail/detail',
         })
