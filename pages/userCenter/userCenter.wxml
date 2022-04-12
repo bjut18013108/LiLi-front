@@ -7,13 +7,22 @@
     </view>
     <open-data class="userName" type="userNickName"></open-data>
 
-    <view class="setting">
-    </view>
+    <image class="setting" src="../../statics/figs/settings.png">
+    </image>
   </view> 
 
   <view class="functions">
-    <view class="orders" bindtap="toOrders">我的订单</view>
-    <view class="service">联系客服</view>
-    <view class="clause">用户条款</view>
+    <view class="orders" bindtap="toOrders"> 
+      <image class="figs" src="../../statics/figs/order.png" /> 
+      <text class="font">我的订单</text> 
+    </view>
+    <view class="service"> 
+      <image class="figs" src="../../statics/figs/service.png" /> 
+      <text class="font">联系客服</text> 
+    </view>
+    <view class="clause"> 
+      <image class="figs" src="../../statics/figs/clause.png" /> 
+      <text class="font">用户条款</text>
+    </view>
   </view>
 </view>
