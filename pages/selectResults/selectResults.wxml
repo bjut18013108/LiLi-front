@@ -1,0 +1,21 @@
+<!--pages/selectResults/selectResults.wxml-->
+
+<view class="container-not-empty" wx:if="{{!(goodsList.length===0)}}">
+    <view wx:for="{{goodsList}}" wx:key="item" class="good-item" bindtap="selectGood" data-id="{{item.id}}">
+        <image class="good-img" src="{{item.picName}}"/> 
+        <view class="good-info">
+            <view class="good-name"> {{item.name}} </view>
+            <view class="good-price"> 
+                ￥ {{item.price}} 
+                <text decode='true'>&nbsp;&nbsp;&nbsp;&nbsp;</text> 
+                <text class="remain" wx:if="{{item.remain > 0}}">当前剩余：{{item.remain}}</text>
+                <text class="no-remain" wx:if="{{item.remain === 0}}">已售罄</text>
+            </view>
+            <view class="good-sales"> 月销量：{{item.sales}} </view>
+        </view>
+    </view>
+</view>
+
+<view class="container-empty" wx:if="{{goodsList.length===0}}">
+    未找到相应商品
+</view>

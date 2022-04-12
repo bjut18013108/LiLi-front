@@ -1,13 +1,14 @@
 {
     "pages": [
         "pages/mainPage/mainPage",
+        "pages/selectResults/selectResults",
         "pages/userCenter/userCenter",
         "pages/detail/detail",
         "pages/shop/shop",
         "pages/orders/orders",
         "pages/goods/goods",
-        "pages/logs/logs",
-        "pages/selectResults/selectResults"
+        "pages/logs/logs"
+        
     ],
     "window": {
         "backgroundTextStyle": "light",

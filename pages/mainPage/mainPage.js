@@ -56,7 +56,7 @@ Page({
     searchBtnAction: function () {
         console.log(this.data.inputVal);
         wx.navigateTo({
-            url: '/pages/logs/logs'
+            url: '/pages/selectResults/selectResults'
         })
     },
 
