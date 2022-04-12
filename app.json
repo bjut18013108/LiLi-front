@@ -1,11 +1,10 @@
 {
     "pages": [
-        "pages/userCenter/userCenter",
         "pages/mainPage/mainPage",
+        "pages/userCenter/userCenter",
         "pages/detail/detail",
         "pages/shop/shop",
         "pages/orders/orders",
-        
         "pages/goods/goods",
         "pages/logs/logs"
     ],

@@ -64,6 +64,16 @@ Page({
     selectShop: function (e) {
         let shopName = e.currentTarget.dataset.name;
         console.log("selected shop: "+shopName);
+        for (let shop of this.data.shopList) {
+            if (shop.name === shopName && shop.status === "已休息") {
+                wx.showToast({
+                    title: '所选商家不在营业中',
+                    icon: 'none',
+                    duration: 1000
+                })
+                return
+            }
+        }
         wx.navigateTo({
             url: '/pages/shop/shop'
         })
